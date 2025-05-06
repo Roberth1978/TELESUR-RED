@@ -103,7 +103,7 @@ body.dark-mode h3 {
 .hero {
     text-align: center;
     padding: 3rem 0;
-    background: url('https://pixabay.com/es/photos/fibra-%C3%B3ptica-la-fibra-%C3%B3ptica-4393369/') center/cover;
+    background: url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
     color: var(--light);
     position: relative;
     border-radius: 8px;
