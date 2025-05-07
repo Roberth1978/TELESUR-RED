@@ -198,3 +198,19 @@ document.addEventListener('DOMContentLoaded', function() {
     animateOnScroll();
     window.addEventListener('scroll', animateOnScroll);
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Resaltar botón activo
+    document.querySelectorAll('.location-selector a').forEach(link => {
+        if (link.href.includes(currentLocation)) {
+            link.classList.add('active');
+        }
+    });
+    
+    // Configurar FormSubmit para cada ubicación
+    const form = document.getElementById('service-form');
+    if (form) {
+        form.setAttribute('action', `https://formsubmit.co/rroberth.chavarria+${currentLocation}@gmail.com`);
+    }
+});

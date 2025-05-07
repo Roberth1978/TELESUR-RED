@@ -511,3 +511,47 @@ footer {
 body.dark-mode .whatsapp-button {
     border: 2px solid var(--light);
 }
+
+
+
+/* Selector de ubicación */
+.location-selector {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.location-selector h3 {
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.location-selector .btn {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--light);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+.location-selector .btn.active {
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+/* Ajustes para el logo con ciudad */
+.logo span {
+    font-size: 0.8em;
+    opacity: 0.9;
+}
+
+/* Modo oscuro */
+body.dark-mode .location-selector {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .location-selector .btn {
+    border-color: var(--accent);
+}
