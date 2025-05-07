@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TELESUR RED - Internet 100% Fibra Óptica</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <div class="logo">TELESUR RED</div>
         <div class="tagline">Internet 100% Fibra Óptica</div>
     </header>
-    
     <nav>
         <ul>
             <li><a href="#inicio">Inicio</a></li>
@@ -22,7 +23,6 @@
             <li><a href="#carrito">Carrito</a></li>
         </ul>
     </nav>
-    
     <div class="container">
         <section id="inicio">
             <div class="hero">
@@ -33,7 +33,6 @@
                 </div>
             </div>
         </section>
-        
         <section id="beneficios">
             <h2>¿Por qué elegirnos?</h2>
             <div class="benefits">
@@ -63,7 +62,6 @@
                 </div>
             </div>
         </section>
-        
         <section id="planes">
             <h2>Planes disponibles</h2>
             <p>Ofrecemos planes desde 30 Mb hasta 100 Mb diseñados para tus necesidades, con tarifas accesibles y sin letras pequeñas.</p>
@@ -112,7 +110,6 @@
                 </div>
             </div>
         </section>
-        
         <section id="contacto">
             <h2>Contáctanos</h2>
             <div class="contact-info">
@@ -133,49 +130,52 @@
                 </div>
             </div>
         </section>
-        
         <section id="registro">
             <h2>Solicita tu servicio</h2>
             <div class="form-container">
-                <form id="service-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="nombre">Nombre completo</label>
-                            <input type="text" id="nombre" name="nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="telefono">Teléfono</label>
-                            <input type="tel" id="telefono" name="telefono" required>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="email">Correo electrónico</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="plan">Plan de interés</label>
-                            <select id="plan" name="plan" required>
-                                <option value="">Selecciona un plan</option>
-                                <option value="Básico">Básico (30 Mbps) - $299/mes</option>
-                                <option value="Estándar">Estándar (60 Mbps) - $499/mes</option>
-                                <option value="Premium">Premium (100 Mbps) - $799/mes</option>
-                            </select>
-                        </div>
+                <form id="service-form" action="https://formsubmit.co/rroberth.chavarria@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Nueva solicitud TELESUR RED">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://tudominio.com/gracias.html">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
                     </div>
                     <div class="form-group">
-                        <label for="direccion">Dirección de instalación</label>
-                        <input type="text" id="direccion" name="direccion" required>
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="referencias">Referencias de dirección</label>
-                        <textarea id="referencias" name="referencias" rows="3" required></textarea>
+                        <label for="plan">Plan de interés</label>
+                        <select id="plan" name="plan" required>
+                            <option value="">Selecciona un plan</option>
+                            <option value="Básico">Básico (30 Mbps) - $299/mes</option>
+                            <option value="Estándar">Estándar (60 Mbps) - $499/mes</option>
+                            <option value="Premium">Premium (100 Mbps) - $799/mes</option>
+                        </select>
                     </div>
-                    <button type="submit" class="btn">Enviar solicitud</button>
-                </form>
-            </div>
-        </section>
-        
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección de instalación</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </div>
+                <div class="form-group">
+                    <label for="referencias">Referencias de dirección</label>
+                    <textarea id="referencias" name="referencias" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar solicitud</button>
+            </form>
+        </div>
+    </section>
+
         <section id="carrito">
             <h2>Carrito de compras</h2>
             <div class="cart-container">
@@ -185,7 +185,6 @@
                 <div class="cart-total" id="cart-total" style="display: none;">
                     Total: $<span id="total-amount">0</span>
                 </div>
-                
                 <div class="payment-methods">
                     <h3>Método de pago</h3>
                     <div class="payment-method">
@@ -212,7 +211,6 @@
                             <input type="text" id="card-name" placeholder="Nombre completo">
                         </div>
                     </div>
-                    
                     <div class="payment-method">
                         <input type="radio" id="efectivo" name="payment" value="efectivo">
                         <label for="efectivo">Pago en efectivo al técnico</label>
@@ -221,20 +219,22 @@
                         <p>Puedes pagar en efectivo al técnico al momento de la instalación. Se te proporcionará un recibo oficial.</p>
                     </div>
                 </div>
-                
                 <button class="btn" id="checkout-btn" style="display: none; width: 100%; margin-top: 2rem;">Proceder al pago</button>
             </div>
         </section>
     </div>
-    
     <footer>
         <p>TELESUR RED Internet a tu alcance</p>
         <p>© 2023 Todos los derechos reservados</p>
         <p>Diseño Web por:"Roberth Maicko Chavarria Roque"</p>
     </footer>
-    
+    <a href="https://wa.me/529321124656?text=Hola,%20quiero%20información%20sobre%20TELESUR%20RED"
+       class="whatsapp-button"
+       target="_blank">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
     <button class="theme-toggle" id="theme-toggle">🌓</button>
-    
     <script src="script.js"></script>
 </body>
+
 </html>
